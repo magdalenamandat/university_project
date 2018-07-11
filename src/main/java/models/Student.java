@@ -51,7 +51,7 @@ public class Student {
         this.age = age;
     }
 
-    @Column(name = "enrolmentNumber")
+    @Column(name = "enrolment_number")
     public int getEnrolmentNumber() {
         return enrolmentNumber;
     }
