@@ -18,11 +18,11 @@ public class Runner {
         Student student2 = new Student("Jesus", 4, 164, course1);
         DBHelper.save(student2);
 
-        Lesson lesson1 = new Lesson("Java", 10);
+        Lesson lesson1 = new Lesson("Java", 10, course2);
         DBHelper.save(lesson1);
-        Lesson lesson2 = new Lesson("Ruby", 20);
+        Lesson lesson2 = new Lesson("Ruby", 20, course2);
         DBHelper.save(lesson2);
-        Lesson lesson3 = new Lesson("Maya", 25);
+        Lesson lesson3 = new Lesson("Maya", 25, course1);
         DBHelper.save(lesson3);
 
         Mentor mentor1 = new Mentor("Mama Tony");

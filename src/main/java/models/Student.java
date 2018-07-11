@@ -11,14 +11,17 @@ public class Student {
     private int age;
     private int enrolmentNumber;
     private Course course;
+    private Mentor mentor;
 
     public Student(){}
 
 
-    public Student(String name, int age, int enrolmentNumber, Course course){
+    public Student(String name, int age, int enrolmentNumber, Course course, Mentor mentor){
         this.name = name;
         this.age = age;
         this.enrolmentNumber = enrolmentNumber;
+        this.course = course;
+        this.mentor = mentor;
     }
 
 
@@ -68,5 +71,15 @@ public class Student {
 
     public void setCourse(Course course) {
         this.course = course;
+    }
+
+    @OneToOne
+    @JoinColumn(name = "mentor_id", nullable = false)
+    public Mentor getMentor() {
+        return mentor;
+    }
+
+    public void setMentor(Mentor mentor) {
+        this.mentor = mentor;
     }
 }
