@@ -10,7 +10,7 @@ public class Runner {
         Course course2 = new Course("Computing", "HNC");
         DBHelper.save(course2);
 
-        Mentor mentor1 = new Mentor("Mama Tony");
+        Mentor mentor1 = new Mentor("Tony");
         DBHelper.save(mentor1);
         Mentor mentor2 = new Mentor("Zsolt");
         DBHelper.save(mentor2);
