@@ -1,6 +1,7 @@
 import db.DBHelper;
 import models.Course;
 import models.Lesson;
+import models.Mentor;
 import models.Student;
 
 public class Runner {
@@ -24,5 +25,9 @@ public class Runner {
         Lesson lesson3 = new Lesson("Maya", 25);
         DBHelper.save(lesson3);
 
+        Mentor mentor1 = new Mentor("Mama Tony");
+        DBHelper.save(mentor1);
+        Mentor mentor2 = new Mentor("Zsolt");
+        DBHelper.save(mentor2);
     }
 }

@@ -26,7 +26,7 @@ public class Mentor {
         this.id = id;
     }
 
-    Column(name = "name")
+    @Column(name = "name")
     public String getName() {
         return name;
     }
